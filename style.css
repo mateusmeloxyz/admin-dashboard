@@ -1,3 +1,23 @@
 * {
     outline: 1px solid red !important;
 }
+
+body,
+html {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    grid-column: 2 / span 1;
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+}
