@@ -31,16 +31,18 @@ html {
 }
 
 .sidebar svg {
-    //display: inline;
+    /*display: inline;*/
     font-size: larger;
 }
 
-.sidebar li {
+.sidebar a {
     display: grid;
     grid-auto-flow: column;
     justify-content: start;
     align-items: center;
     gap: 1em;
+    text-decoration: none;
+    color: inherit;
 }
 
 .sidebar .title {
