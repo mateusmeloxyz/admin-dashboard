@@ -195,3 +195,17 @@ button {
 .header_bottom .action-buttons {
     justify-self: end;
 }
+
+.content {
+    padding: 2em;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+}
+
+.content-item {
+    background-color: white;
+    border-radius: 1em;
+}
