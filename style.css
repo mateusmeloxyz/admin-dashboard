@@ -12,6 +12,7 @@ body {
 html {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
+    overflow: auto;
 }
 
 body {
@@ -199,7 +200,7 @@ button {
 
 .content {
     display: grid;
-    grid-template-columns: 5fr minmax(15em, 1fr);
+    grid-template-columns: 6fr minmax(15em, 2fr);
     gap: 1.5em;
     padding: 2em 1.5em;
     background-color: #e2e8f0;
@@ -208,7 +209,7 @@ button {
 .projects {
     flex: 1;
     display: grid;
-    grid-template-rows: repeat(3, minmax(8em, 13em));
+    grid-template-rows: repeat(3, minmax(8em, auto));
     grid-template-columns: repeat(2, minmax(25em, auto));
     gap: 1.5em;
 }
@@ -230,7 +231,7 @@ button {
 .announcements-trending {
     flex: 3;
     display: grid;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(1, auto);
     gap: 1.5em;
 }
@@ -260,4 +261,28 @@ button {
 
 .content-card .card-options {
     font-size: larger;
+}
+
+.announcements .content-card {
+    padding: 1.5em;
+}
+
+.announcements-trending .content-card {
+    padding: 1em 2em;
+    display: grid;
+    grid-template-rows: repeat(3, minmax(1fr, 1em));
+    align-items: center;
+}
+
+.announcements-trending .announcements p {
+    font-size: 0.75em;
+}
+
+.announcements .card-item {
+    box-sizing: border-box;
+    border-bottom: solid #d2d2d2 0.1em;
+}
+
+.announcements div:last-child {
+    border-bottom: none;
 }
