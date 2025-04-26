@@ -286,3 +286,32 @@ button {
 .announcements div:last-child {
     border-bottom: none;
 }
+
+.trending {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+}
+
+.trending .trending-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-items: start;
+    justify-self: start;
+    white-space: nowrap;
+    gap: 1em;
+}
+
+.trending-item img {
+    border-radius: 100%;
+    max-height: 3em;
+    max-width: 3em;
+}
+
+.trending-item .username {
+    color: black;
+}
+
+.trending-item p {
+    color: #686868;
+}
